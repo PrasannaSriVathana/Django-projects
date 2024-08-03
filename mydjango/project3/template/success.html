@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hostel Information</title>
+    </head>
+    <body>
+        <form>
+            <table border="1">
+                <tr><th colspan="4" align=""center>Hostel Information</th></tr>
+                <tr>
+                        <th>name</th>
+                        <th>room</th>
+                        <th>year</th>
+                        <th>hostelid</th>
+                </tr>
+                {% for hosteller in people %}
+                <tr>
+                    <td>{{hosteller.name}}</td>
+                    <td>{{hosteller.room}}</td>
+                    <td>{{hosteller.year}}</td>
+                    <td>{{data.hostelid}}</td>
+                    
+                </tr>
+                {% endfor %}
+        
+            </table>
+        </form>
+    </body>
+</html>
